@@ -1,0 +1,61 @@
+<!doctype html>
+<html lang="en">
+	<head>
+		<meta charset="utf-8" />
+		<title>Bounce Example</title>
+		<link rel="stylesheet" href="http://code.jquery.com/ui/1.10.3/themes/smoothness/jquery-ui.css" />
+
+		<script src="http://code.jquery.com/jquery-1.9.1.js"></script>
+		<script src="http://code.jquery.com/ui/1.10.3/jquery-ui.js"></script>
+		
+		<style>
+			body {
+				background-color: lightblue;
+			}
+			
+			#effect {
+				width: 500px;
+			}
+			
+			#mypara {
+				font-size: 36px;
+			}
+			
+			h2 {
+				font-family: Ariel, Helvetica, san-serif;
+			}
+		</style>
+		
+		<script>
+			$(document).ready(function() {
+				var callback = function() {
+					setTimeout(function() {
+						$('#effect').removeAttr('style').fadeIn();
+					}, 100 );
+				}
+				
+				window.onload = function() {
+					$('#button').click(
+						function runEffect() {
+							var options = [];
+							$('#effect').effect('bounce', options, 1000, callback);
+							$('#mypara').html('Bounce, Bounce');
+						}
+					);
+				}
+			});
+		</script>
+	</head>
+
+	<body>
+		<h2>Bounce Example</h2>
+		
+		<p><input type='button' id='button' value='Bounce Effect'></p>
+		
+		<div id='effect' class='ui-widget-content ui-corner-all'>
+			<p id='mypara'>
+				Here I am!
+			</p>
+		</div>
+	</body>
+</html>

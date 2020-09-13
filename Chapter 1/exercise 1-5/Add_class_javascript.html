@@ -1,0 +1,49 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+	<meta http-equiv="Content-Type" content="text/html; charset=utf-8">
+	<title>Adding a Class</title>
+
+	<style>
+		.bluetext {
+			color: blue;
+			font-size: 2em;
+		}
+	</style>
+
+	<script>
+	
+		var $ = function (id) {
+			return document.getElementById(id);
+		}
+	
+		var addClass = function()
+		{
+			$("mypara").setAttribute("class", "bluetext");
+		}
+		
+		/*
+			Here is where I use an onload event
+		*/
+		
+		window.onload = function ()
+		{
+			$("mybutton").onclick = addClass;   //Do NOT use () here!
+		}
+		
+	</script>
+
+</head>
+
+<body>
+
+	<h1>Add Class Example</h1>
+
+	<main>
+		<p id="mypara">Some Content</p>
+		<input type="button" id="mybutton" value="Change Text Color">
+	</main>
+
+</body>
+</html>

@@ -1,0 +1,66 @@
+<!doctype html>
+<html lang="en">
+
+<head>
+	<meta charset="utf-8" />
+	<title>Chapter 7 Assignment</title>
+	
+	<link rel="stylesheet" href="https://code.jquery.com/ui/1.12.1/themes/smoothness/jquery-ui.css" >
+	<link rel="stylesheet" href="asgn7.css">
+	
+	<script src="https://code.jquery.com/jquery-3.2.1.min.js"></script>
+	<script src="http://code.jquery.com/ui/1.12.1/jquery-ui.min.js"></script>
+	<script src="asgn7.js" type="text/javascript"></script>
+</head>
+
+<body>
+	<h1>Health Care Exchange - First Draft</h1>
+	
+	<main>
+		<div id='tabs'>
+			<ul>
+				<li><a href='#tabs-1'>Sign Up</a></li>
+				<li><a href='#tabs-2'>Pick a Plan</a></li>
+				<li><a href='#tabs-3'>How do you Feel?</a></li>
+			</ul>
+			
+			<div id='tabs-1'>
+				<h2>Sign Up</h2>
+				<p>First Name:<br>
+				<input type='text' id='firstname' size='30'>
+				<span class='error' id='first_error'></span></p>
+				
+				<p>Last Name:<br>
+				<input type='text' id='lastname' size='30'>
+				<span class='error' id='last_error'></span></p>
+				
+				<p>Start Date:<br>
+				<input type='text' id='datepicker'>
+				<span class='error' id='date_error'></span></p>
+				
+				<p><input type='button' id='createaccount' value='Create an Account'></p>
+				<p id='accountmessage'></p>
+			</div>
+			
+			<div id='tabs-2'>
+				<div id='great' class='ui-widget-content, draggable'>
+					<p>Great Plan!</p>
+				</div>
+				<div id='poor' class='ui-widget-content, draggable'>
+					<p>Poor Plan!</p>
+				</div>
+				<div id='droppable' class='ui-widget-header'>
+					<p><strong>Drop your plan here</strong></p>
+				</div>
+			</div>
+			
+			<div id='tabs-3'>
+				<p><input type='button' id='showfeelings' value='Show My Feelings'></p>
+				<div id='feelings' class='ui-widget-content ui-corner-all'>
+					<p></p>
+				</div>
+			</div>
+		</div>
+	</main>
+</body>
+</html>

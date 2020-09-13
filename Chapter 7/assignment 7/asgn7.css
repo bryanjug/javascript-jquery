@@ -1,0 +1,56 @@
+h1 {
+	color: blue;
+	font-family: Ariel, Helvetica, san-serif;
+}
+
+h2 {
+	font-family: Ariel, Helvetica, san-serif;
+}
+body {
+	background-color: #FFF8D2;
+}
+
+#tabs {
+	background-color: #D0D0D0;
+}
+
+.error {
+	color: red;
+}
+
+.draggable {
+	width: 100px;
+	height: 100px;
+	padding: 0.5em;
+	margin: 30px 10px 10px 0;
+	background-color: white;
+	float: left;
+	border: solid;
+	border-color: #D0D0D0;
+}
+
+#droppable {
+	width: 150px;
+	height: 300px;
+	padding: 0.5em;
+	margin: 25px 25px;
+	float: right;
+	background-color: none;
+	border: none;
+}
+
+#tabs-2 {
+	background-color: white;
+}
+
+#tabs-3 {
+	background-color: white;
+}
+
+#feelings {
+	border: solid;
+	border-color: grey;
+	height: 100px;
+	width: 500px;
+	font-size: 30px;
+}

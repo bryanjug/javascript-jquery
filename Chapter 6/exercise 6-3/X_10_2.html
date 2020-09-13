@@ -1,0 +1,44 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+	<meta http-equiv="Content-Type" content="text/html; charset=utf-8">
+    <title>Exercise 10-2</title>
+	<link rel="stylesheet" href="X_10_2.css">
+	<script src="https://code.jquery.com/jquery-3.2.1.min.js"></script> 
+   	<script src="X_10_2.js"></script>
+</head>
+
+<body>
+	<form method='POST'>
+	<div id="top">
+		<h2>Exercise 10-2</h2>
+		<h3>Check Box for Each Degree You Have</h3>
+		<br>
+		<label for="first_name">First Name:</label>
+		<input type="text" id="first_name" name="first_name" required>
+		<br>
+	</div>
+
+	<div id="mycbxs">
+		<br><strong>&nbsp;</strong>
+		<br><input type="checkbox" id="BAcbx" value="B"> BA
+		<br><input type="checkbox" id="MAcbx" value="M"> MA
+		<br><input type="checkbox" id="PHDcbx" value="P"> PHD
+	</div>
+
+	<div id="myinputs">
+		<br><strong>Discipline</strong>
+		<br><input type="text" id="BAText" size="30">
+		<br><input type="text" id="MAText" size="30">
+		<br><input type="text" id="PHDText"  size="30">
+
+		<br><br>
+		<input type="submit" id="myclick" value="Submit Degree Info">
+		<br>
+		<p id="message"></p>
+	</div>
+
+	</form>
+
+</body>
+</html>

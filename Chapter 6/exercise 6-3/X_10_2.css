@@ -1,0 +1,56 @@
+/* type selectors */
+article, aside, figure, figcaption, footer, header, nav, section {
+    display: block;
+}
+
+* {
+	margin: 0;
+	padding: 0;
+}
+
+body {
+	font-family: Verdana, Arial, Helvetica, sans-serif;
+    font-size: 87.5%;
+	width: 650px;
+	margin: 0 auto;
+	background-color: silver;
+}
+
+section {
+	padding: 15px 25px;
+}
+
+h1 {
+	font-size: 150%;
+}
+
+h2 {
+	font-size: 120%;
+}
+
+p {
+	padding-bottom: .25em;
+	padding-left: 25px;
+}
+
+#top {
+	position: absolute;
+	top: 10px;
+	left: 250px;
+	width: 600px;
+}
+
+#mycbxs {
+	position: absolute;
+	top: 100px;
+	left: 250px;
+	width: 200px;
+}
+
+#myinputs {
+	position: absolute;
+	top: 100px;
+	left: 360px;
+	width: 400px;
+}
+

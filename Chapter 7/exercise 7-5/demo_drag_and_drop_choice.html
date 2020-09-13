@@ -1,0 +1,67 @@
+<!doctype html>
+<html lang="en">
+<head>
+<meta charset="utf-8" />
+<title>jQuery UI Droppable - Make a Choice</title>
+<link rel="stylesheet" href="http://code.jquery.com/ui/1.10.3/themes/smoothness/jquery-ui.css" />
+<script src="http://code.jquery.com/jquery-1.9.1.js"></script>
+<script src="http://code.jquery.com/ui/1.10.3/jquery-ui.js"></script>
+<link rel="stylesheet" href="/resources/demos/style.css" />
+
+<style>
+	.draggable { width: 100px; height: 100px; padding: 0.5em; margin: 10px 10px 10px 0; background-color: yellow;}
+	#droppable { width: 150px; height: 150px; padding: 0.5em; float: left; margin: 10px; }
+</style>
+
+<script>
+
+$(function() {
+
+	$( ".draggable" ).draggable();
+	
+	$( "#droppable" ).droppable({
+	
+		drop: function( event, ui ) {
+		
+			if (ui.draggable.attr("id") == "One")
+			{
+				alert("One is Dropped");
+			}
+			
+			if (ui.draggable.attr("id") == "Two")
+			{
+				alert("Two is Dropped");
+			}
+			
+			if (ui.draggable.attr("id") == "Three")
+			{
+				alert("Three is Dropped");
+			}
+	}
+	});
+});
+
+</script>
+</head>
+<body>
+
+<h2>Drag a yellow box into the "Drop here" box to see what was selected</h2>
+
+<div id="One" class="ui-widget-content, draggable">
+<p>Drag One</p>
+</div>
+
+<div id="Two" class="ui-widget-content, draggable">
+<p>Drag Two</p>
+</div>
+
+<div id="Three" class="ui-widget-content, draggable">
+<p>Drag Three</p>
+</div>
+
+<div id="droppable" class="ui-widget-header">
+<p>Drop here</p>
+</div>
+
+</body>
+</html>

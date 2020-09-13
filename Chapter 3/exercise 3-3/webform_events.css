@@ -1,0 +1,23 @@
+body {
+	font-family: Ariel, Verdana, sans-serif;
+	background-color: palegoldenrod;
+}
+
+p {
+	color: saddlebrown;
+	padding: 10px;
+}
+
+#container {width:60%;}
+
+.pcolor {font-weight: bold;}
+
+.headcolor {
+	color: white;
+	background-color: saddlebrown;
+	padding: 10px;
+}
+
+#myformdiv {float: left; display: inline-block;}
+
+#myimagediv {display: inline-block; padding-left: 50px;}
